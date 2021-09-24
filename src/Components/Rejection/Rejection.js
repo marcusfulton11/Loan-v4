@@ -1,14 +1,15 @@
 import React from 'react';
-import LoginForm from './Components/Form/Form';
+// import LoanApp from '../Form/Form';
 
 
-function App() {
+
+function Rejection() {
   return (
     <div>
-      <LoginForm />
+      <p>REJECTION</p>
     </div>
 
   );
 }
 
-export default App;
+export default Rejection;

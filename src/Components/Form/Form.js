@@ -1,7 +1,18 @@
 import  React, { useState } from "react";
+import { useHistory } from "react-router-dom";
+import {
+    Flex,
+    Box,
+    Heading,
+    FormControl,
+    FormLabel,
+    Input,
+    Button
+  } from '@chakra-ui/react';
 
 
-export default function LoginForm() { //Creates function for login form
+
+export default function LoanApp() { //Creates function for login form
     const [purchasePrice, setPurchasePrice] = useState(""); //sets inital state of purchase price
     const [make, setMake] = useState(""); //same as above for make
     const [model, setModel] = useState("");
@@ -15,22 +26,18 @@ export default function LoginForm() { //Creates function for login form
     const [yearlyIncomeErr, setYearlyIncomeErr] = useState({});
     const [creditScoreErr, setCreditScoreErr] = useState({});
 
-
+    let history = useHistory();
 
     const handleSubmit = (e) => { // function to handle the submit button when clicked
         e.preventDefault(); // a preventDefault is called on the event when submitting the form to prevent the browser reload/refresh
-        console.log(purchasePrice, make, model)
-        const isValid = formValidation();
+        console.log(creditScore < 600)
+        formValidation();
         if(purchasePrice > yearlyIncome / 5){
-            alert("you dont make enough money")
-        } else if(creditScore < 600) {
-            alert("your credit sucks")
+           history.push("/Rejection")
+        } else if(creditScore > 600) {
+            console.log("Made it past score check")
+           history.push("/SignUp")
         }
-    //     if(isValid){
-    //         // move to acceptance page
-    //     } else {
-    //         // move to rejection page
-    //     }
     }
   
     const formValidation = () =>{
@@ -102,15 +109,21 @@ export default function LoginForm() { //Creates function for login form
     }
 
     return (
+        <>
+       <Flex width="full" align="center" justifyContent="center">
+       <Box p={200}>
+        <Box textAlign="center"></Box>
+      <Heading>Loan Application</Heading>
       <form onSubmit={handleSubmit}>
+          <FormControl>
         <div>
-        <label>Purchase Price</label>
-        <input
+        <FormLabel>Purchase Price</FormLabel>
+        <Input
           type="number"
           id="purchasePrice"
           placeholder="Purchase Price"
           value={purchasePrice}
-          required
+        //   required
           onChange={(e) => setPurchasePrice(e.target.value)}
         />
         </div>
@@ -120,8 +133,8 @@ export default function LoginForm() { //Creates function for login form
         {/* <p>{purchasePrice}</p> */}
         <br/>
         <div>
-        <label>Make</label>
-        <input
+        <FormLabel>Make</FormLabel>
+        <Input
           type="text"
           id="make"
           placeholder="Make"
@@ -136,8 +149,8 @@ export default function LoginForm() { //Creates function for login form
         {/* <p>{make}</p> */}
         <br/>
         <div>
-        <label>Model</label>
-        <input
+        <FormLabel>Model</FormLabel>
+        <Input
           type="text"
           id="model"
           placeholder="Model"
@@ -152,8 +165,8 @@ export default function LoginForm() { //Creates function for login form
         {/* <p>{model}</p> */}
         <br/>
         <div>
-        <label>Yearly Income</label>
-        <input
+        <FormLabel>Yearly Income</FormLabel>
+        <Input
           type="number"
           id="yearlyIncome"
           placeholder="Yearly income"
@@ -168,8 +181,8 @@ export default function LoginForm() { //Creates function for login form
         {/* <p>{yearlyIncome}</p> */}
         <br/>
         <div>
-        <label>Credit Score</label>
-        <input
+        <FormLabel>Credit Score</FormLabel>
+        <Input
           type="number"
           id="creditScore"
           placeholder="Credit Score"
@@ -182,7 +195,12 @@ export default function LoginForm() { //Creates function for login form
             return <div style={{color: "red"}}>{creditScoreErr[key]}</div>
         })}
         {/* <p>{creditScore}</p> */}
-        <button type="submit">Submit </button>
+    <br/>
+        <Button type="submit">Submit </Button>
+        </FormControl>
       </form>
+      </Box>
+      </Flex>
+      </>
     );
   } 
