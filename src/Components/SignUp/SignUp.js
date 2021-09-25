@@ -13,9 +13,9 @@ export default function SignUp() {
     e.preventDefault();
   }
 
-  const [emailErr, setEmailErr] = useState("");
-  const [passwordErr, setPasswordErr] = useState("");
-  const [confirmPasswordErr, setConfirmPasswordErr] = useState("");
+  // const [emailErr, setEmailErr] = useState("");
+  // const [passwordErr, setPasswordErr] = useState("");
+  // const [confirmPasswordErr, setConfirmPasswordErr] = useState("");
 
   return (
     <form onSubmit={handleSubmit}>
