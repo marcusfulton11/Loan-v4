@@ -10,7 +10,7 @@ const Navbar= () =>{
    <ul>
     <li>
     <Link to="/Contact">Contact</Link>
-     </li>
+    </li>
     <li>
       <Link to="/LoanApp">Application</Link>
     </li>

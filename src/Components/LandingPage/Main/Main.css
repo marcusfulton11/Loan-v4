@@ -1,6 +1,29 @@
-div.blueSquare {
+main{
+    overflow: auto;
+}
+
+.blueSquare {
     background-color: #146681;
     float: right;
     width: 50vw;
     height: 40vw;
+    margin: none;
+}
+
+.pic {
+    width: auto;
+    height: auto;
+}
+
+
+.banknotes {
+    filter: opacity(60%) contrast(170%);
+    width: 45vw;
+    height: 35vw;
+    margin-left: 40vw;
+    margin-top: 10vw;
+}
+
+h1{
+    font-size: 5vw !important;
 }
