@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Main.css";
-
+import {  Link } from "react-router-dom";
 
 const Main= () =>{
   return (
@@ -8,10 +8,27 @@ const Main= () =>{
   <div>
 <div className="blueSquare"></div>
   </div>
+  <h1>Chase Your<br/>
+     Dream With Us</h1>
+
+     <p className="workHardTxt">The harder you work for something, the greater<br/>
+     you'll feel when you achieve it</p>
+
+     <Link to="/LoanApp" className="carLoanBtn">Car Loan</Link>
+     <img className="sportCar" src={"sport-car.png"} alt="car" />
+
+     <button className="fakeButton">Home Loan</button>
+     <img className="house" src={"house.png"} alt="house" />
+
+     <Link to="/LoanApp" className="applyOnline">Apply Online</Link>
+
   <div className="pic">
     <img className="banknotes" src={"banknotes.jpg"} alt="banknotes" />
  </div>
- <h1>Chase Your Dream With Us</h1>
+ <h2 className="custExp">Creating Extraordinary Customer Experience</h2>
+ <p className="custTxt">Lorem ipsum dolor sit amet,
+    consectetur adipiscing elit. Nullam bibendum
+    eget morbi<br/> dignissim eu pharetra consequat montes, sagittis.</p>
  </main>
   );
 }
