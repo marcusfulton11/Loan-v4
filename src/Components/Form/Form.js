@@ -111,9 +111,10 @@ export default function LoanApp() { //Creates function for login form
     return (
         <>
        <Flex width="full" align="center" justifyContent="center">
-       <Box p={200}>
+       <Box p={100}>
         <Box textAlign="center"></Box>
       <Heading>Loan Application</Heading>
+      <br/>
       <form onSubmit={handleSubmit}>
           <FormControl>
         <div>
