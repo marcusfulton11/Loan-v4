@@ -116,3 +116,24 @@ h1{
     margin-top: 10vw;
     margin-left: 32.5vw;
 }
+
+.ethos {
+    position: absolute;
+    width: auto;
+    margin-top: 20vw;
+    margin-left: 10.5vw;
+}
+
+.partners {
+    position: absolute;
+    width: 100%;
+    margin-left: 0vw;
+    margin-top: 50vw;
+}
+
+.fakelinks {
+    position: absolute;
+    width: 100%;
+    margin-left: 0vw;
+    margin-top: 80vw;
+}

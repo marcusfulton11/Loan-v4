@@ -29,6 +29,9 @@ const Main= () =>{
  <p className="custTxt">Lorem ipsum dolor sit amet,
     consectetur adipiscing elit. Nullam bibendum
     eget morbi<br/> dignissim eu pharetra consequat montes, sagittis.</p>
+    <img className="ethos" src={"ethos.png"} alt="ethos" />
+    <img className="partners" src={"partners.png"} alt="partners" />
+    <img className="fakelinks" src={"fakelinks.png"} alt="fakelinks" />
  </main>
   );
 }
