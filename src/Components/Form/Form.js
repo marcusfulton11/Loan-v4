@@ -7,8 +7,11 @@ import {
     FormControl,
     FormLabel,
     Input,
-    Button
+    Button, 
+    Img,
   } from '@chakra-ui/react';
+import LeftMarketCopy from "./LeftMarketCopy";
+import RightMarketCopy from "./RightMarketCopy";
 
 
 
@@ -109,9 +112,20 @@ export default function LoanApp() { //Creates function for login form
     }
 
     return (
-        <>
-       <Flex width="full" align="center" justifyContent="center">
-       <Box p={100}>
+        <Flex 
+        justifyContent="center">
+            <Img 
+            src={"sport-car.png"} 
+            alt="car" 
+            position="absolute"
+            marginTop="1vh"
+            marginRight="6vw"
+            width="60vw"
+            opacity="0.02"
+            zIndex="-2" />
+        <LeftMarketCopy />
+       <Flex width="33vw" align="center" justifyContent="center">
+       <Box p={100}  backgroundColor="rgb(255,255,255, .1)" borderRadius="1%">
         <Box textAlign="center"></Box>
       <Heading>Loan Application</Heading>
       <br/>
@@ -202,6 +216,7 @@ export default function LoanApp() { //Creates function for login form
       </form>
       </Box>
       </Flex>
-      </>
+      <RightMarketCopy />
+      </Flex>
     );
   } 
