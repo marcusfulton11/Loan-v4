@@ -6,6 +6,7 @@ import {
   Box,
   Image,
 } from '@chakra-ui/react';
+import InspirationIcons from './InspirationIcons';
 
 const Main= () =>{
   return (
@@ -34,6 +35,7 @@ marginLeft="auto"
     opacity="55%"
      />
 <BottomInfo />
+<InspirationIcons />
     {/* <Image className="ethos" src={"ethos.png"} alt="ethos" />
     <Image className="partners" src={"partners.png"} alt="partners" />
     <Image className="fakelinks" src={"fakelinks.png"} alt="fakelinks" /> */}

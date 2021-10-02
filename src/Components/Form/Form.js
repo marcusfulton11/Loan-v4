@@ -125,7 +125,7 @@ export default function LoanApp() { //Creates function for login form
             zIndex="-2" />
         <LeftMarketCopy />
        <Flex width="33vw" align="center" justifyContent="center">
-       <Box p={100}  backgroundColor="rgb(255,255,255, .1)" borderRadius="1%">
+       <Box p={70}  backgroundColor="rgb(255,255,255, .1)" borderRadius="1%">
         <Box textAlign="center"></Box>
       <Heading>Loan Application</Heading>
       <br/>
