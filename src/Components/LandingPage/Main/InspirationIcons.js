@@ -5,7 +5,7 @@ import {
     Box,
     Text,
   } from '@chakra-ui/react';
-  import { BiDotsHorizontalRounded } from "react-icons/bi";
+  import { BiCategory } from "react-icons/bi";
   import { FcNightLandscape } from "react-icons/fc";
   import { SiSquare } from "react-icons/si";
   import { RiTeamFill } from "react-icons/ri";
@@ -13,7 +13,6 @@ import {
   import { GoRocket } from "react-icons/go";
   import { GoBriefcase } from "react-icons/go";
   import { CgDigitalocean } from "react-icons/cg";
-
 
 
 const InspirationIcons= () =>{
@@ -25,7 +24,7 @@ const InspirationIcons= () =>{
         width="100%"
         fontSize="large" >
         <Box marginLeft="17.5vw">
-        <Icon as={BiDotsHorizontalRounded} color="#146681" />
+        <Icon as={BiCategory} color="#146681" />
         <Text>Integrity</Text>
         <Icon as={FcNightLandscape} color="#146681" marginTop="20vh" />
         <Text>Demonstrate</Text>
