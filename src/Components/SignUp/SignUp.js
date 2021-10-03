@@ -1,30 +1,30 @@
-import  React, { useState } from "react";
+import  React from "react";
 
 
  
 
 export default function SignUp() {
 
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [password, setPassword] = useState("");
+  // const [confirmPassword, setConfirmPassword] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  }
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  // }
 
   // const [emailErr, setEmailErr] = useState("");
   // const [passwordErr, setPasswordErr] = useState("");
   // const [confirmPasswordErr, setConfirmPasswordErr] = useState("");
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form> 
      <div>
        <label>Email address</label>
         <input type="email"  
                name="email" 
                placeholder="Enter email"
-               value={email}
+              //  value={email}
         />
        </div>
       <div>
@@ -32,7 +32,7 @@ export default function SignUp() {
           <input type="password"
                  name="password" 
                  placeholder="Password"
-                 value={password}
+                //  value={password}
         />
         </div>
       <div>
@@ -40,7 +40,7 @@ export default function SignUp() {
            <input type="password"  
                   id="confirmPassword" 
                   placeholder="Confirm Password"
-                  value={confirmPassword}
+                  // value={confirmPassword}
         />
       </div>
         <button 
