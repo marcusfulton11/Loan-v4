@@ -14,7 +14,8 @@ const Main= () =>{
     flexDirection="column"
     // border="1px" 
     // borderColor="green.200"
-    height="100vh">
+    height="100vh"
+    backgroundColor="black">
 <Box 
 backgroundColor="#146681"
 width="50vw"
