@@ -36,9 +36,25 @@ marginLeft="auto"
      />
 <BottomInfo />
 <InspirationIcons />
-    {/* <Image className="ethos" src={"ethos.png"} alt="ethos" />
-    <Image className="partners" src={"partners.png"} alt="partners" />
-    <Image className="fakelinks" src={"fakelinks.png"} alt="fakelinks" /> */}
+    <Image 
+    className="partners" 
+    src={"partners.png"} 
+    alt="partners"
+    position="absolute"
+    marginLeft="0"
+    marginTop="200vh"
+    width="100vw"
+    
+     />
+    <Image
+     className="fakelinks" 
+     src={"fakelinks.png"} 
+     alt="fakelinks"
+     position="absolute"
+     marginLeft="0"
+     marginTop="265vh"
+     width="100vw"
+      />
  </Flex>
   );
 }
