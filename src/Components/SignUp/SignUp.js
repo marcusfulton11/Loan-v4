@@ -46,7 +46,7 @@ export default function SignUp() {
         <button 
            type="submit" 
                 >
-            Register
+            Register.
                 </button>
             </form>
   );
