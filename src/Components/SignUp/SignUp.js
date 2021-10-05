@@ -1,4 +1,14 @@
 import  React from "react";
+import {
+  Flex,
+  Box,
+  Heading,
+  FormControl,
+  FormLabel,
+  Input,
+  Button, 
+  Img,
+} from '@chakra-ui/react';
 
 
  
@@ -18,36 +28,50 @@ export default function SignUp() {
   // const [confirmPasswordErr, setConfirmPasswordErr] = useState("");
 
   return (
-    <form> 
-     <div>
-       <label>Email address</label>
-        <input type="email"  
+    <Flex
+    width="99.9vw"
+    height="80vh"
+    flexDirection="column"
+    justifyContent="center"
+    alignItems="center"
+    position="absolute">
+    <Box p={70}  backgroundColor="rgb(255,255,255, .1)" borderRadius="1%">
+    <Heading marginBottom="5vh">Sign Up</Heading>
+    <form>
+    <FormControl> 
+     <Box>
+       <FormLabel>Email address</FormLabel>
+        <Input type="email"  
                name="email" 
                placeholder="Enter email"
               //  value={email}
         />
-       </div>
-      <div>
-         <label>Password</label>
-          <input type="password"
+       </Box>
+      <Box>
+         <FormLabel>Password</FormLabel>
+          <Input type="password"
                  name="password" 
                  placeholder="Password"
                 //  value={password}
         />
-        </div>
-      <div>
-          <label>Confirm Password</label>
-           <input type="password"  
+        </Box>
+      <Box>
+          <FormLabel>Confirm Password</FormLabel>
+           <Input type="password"  
                   id="confirmPassword" 
                   placeholder="Confirm Password"
                   // value={confirmPassword}
         />
-      </div>
-        <button 
+      </Box>
+        <Button 
+           marginTop="5vh"
            type="submit" 
                 >
-            Register.
-                </button>
+            Register
+                </Button>
+            </FormControl>
             </form>
+            </Box>
+            </Flex>
   );
 }
