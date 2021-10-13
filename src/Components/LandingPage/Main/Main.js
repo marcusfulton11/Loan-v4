@@ -17,8 +17,8 @@ const Main= () =>{
     height="100vh">
 <Box 
 backgroundColor="#146681"
-width="50vw"
-height="40vw"
+width={{ base: "100vw", md: "40px", lg: "50vw" }}
+height={{ base: "80vw", md: "40px", lg: "40vw" }}
 marginLeft="auto"
 >
 </Box>
@@ -28,10 +28,10 @@ marginLeft="auto"
     src={"banknotes.jpg"} 
     alt="banknotes"
     position="absolute"
-    width="50vw"
-    height="75vh"
-    marginTop="20vh"
-    marginLeft="40vw"
+    width={{ base: "60vw", md: "40px", lg: "50vw" }}
+    height={{ base: "50vw", md: "40px", lg: "75vh" }}
+    marginTop={{ base: "1vh", md: "40px", lg: "20vh" }}
+    marginLeft={{ base: "40vw", md: "40px", lg: "40vw" }}
     opacity="55%"
      />
 <BottomInfo />

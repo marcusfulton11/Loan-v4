@@ -16,8 +16,8 @@ const BottomInfo= () =>{
         marginTop="115vh"
         alignItems="center"
         >
-<Heading>Creating Extraordinary Customer Experience</Heading>
- <Text marginTop="10vh">Lorem ipsum dolor sit amet,
+<Heading className="createHeader">Creating Extraordinary Customer Experience</Heading>
+ <Text className="lorem" marginTop="10vh">Lorem ipsum dolor sit amet,
     consectetur adipiscing elit. Nullam bibendum
     eget morbi<br/> dignissim eu pharetra consequat montes, sagittis.</Text>
     </Flex>

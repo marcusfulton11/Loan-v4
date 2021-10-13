@@ -33,3 +33,12 @@ ul {
       margin-top: 1vw;
       width: 150px; 
   }
+
+  @media (max-width:480px)  {
+    li {
+      font-size: 3vw;
+      padding: 1px;
+    }
+  }
+
+@media (min-width:600px)  {}

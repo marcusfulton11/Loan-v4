@@ -113,19 +113,23 @@ export default function LoanApp() { //Creates function for login form
 
     return (
         <Flex 
-        justifyContent="center">
+        justifyContent="center"
+        marginTop={{ base: "10vh", md: "10vh", lg: "10vh" }}
+        marginBottom={{ base: "10vh", md: "10vh", lg: "5vh" }}>
             <Img 
             src={"sport-car.png"} 
             alt="car" 
             position="absolute"
-            marginTop="1vh"
+            marginTop={{ base: "20vh", md: "1vh", lg: "-15vh" }}
             marginRight="6vw"
-            width="60vw"
+            width={{ base: "100vw", md: "100vw", lg: "60vw" }}
             opacity="0.02"
             zIndex="-2" />
         <LeftMarketCopy />
        <Flex width="33vw" align="center" justifyContent="center">
-       <Box p={70}  backgroundColor="rgb(255,255,255, .1)" borderRadius="1%">
+       <Box p={{ base: "10vw", md: "15vw", lg: "2vw" }}
+         backgroundColor="rgb(255,255,255, .1)"
+          borderRadius="1%">
         <Box textAlign="center"></Box>
       <Heading>Loan Application</Heading>
       <br/>

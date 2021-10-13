@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   Flex,
-  Box,
   Heading,
   Text,
   Icon,
@@ -25,7 +24,7 @@ function Rejection() {
     borderRadius="1%"
     >
       <Icon 
-      as={ImSad2}
+       as={ImSad2}
        w={20} h={20} 
        color="#ffcc33"
        marginTop="10vh" />
